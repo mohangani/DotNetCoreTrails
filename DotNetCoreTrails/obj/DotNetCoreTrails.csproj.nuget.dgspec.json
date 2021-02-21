@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Study Folder\\C# Trails\\DotNetCoreTrails\\DotNetCoreTrails\\DotNetCoreTrails\\DotNetCoreTrails.csproj": {}
+    "C:\\Study Folder\\DotNetCoreTrails\\DotNeCoretTrails\\DotNetCoreTrails\\DotNetCoreTrails.csproj": {}
   },
   "projects": {
-    "C:\\Study Folder\\C# Trails\\DotNetCoreTrails\\DotNetCoreTrails\\DotNetCoreTrails\\DotNetCoreTrails.csproj": {
+    "C:\\Study Folder\\DotNetCoreTrails\\DotNeCoretTrails\\DotNetCoreTrails\\DotNetCoreTrails.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Study Folder\\C# Trails\\DotNetCoreTrails\\DotNetCoreTrails\\DotNetCoreTrails\\DotNetCoreTrails.csproj",
+        "projectUniqueName": "C:\\Study Folder\\DotNetCoreTrails\\DotNeCoretTrails\\DotNetCoreTrails\\DotNetCoreTrails.csproj",
         "projectName": "DotNetCoreTrails",
-        "projectPath": "C:\\Study Folder\\C# Trails\\DotNetCoreTrails\\DotNetCoreTrails\\DotNetCoreTrails\\DotNetCoreTrails.csproj",
+        "projectPath": "C:\\Study Folder\\DotNetCoreTrails\\DotNeCoretTrails\\DotNetCoreTrails\\DotNetCoreTrails.csproj",
         "packagesPath": "C:\\Users\\mohan.santha.KJSYSTEMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Study Folder\\C# Trails\\DotNetCoreTrails\\DotNetCoreTrails\\DotNetCoreTrails\\obj\\",
+        "outputPath": "C:\\Study Folder\\DotNetCoreTrails\\DotNeCoretTrails\\DotNetCoreTrails\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
