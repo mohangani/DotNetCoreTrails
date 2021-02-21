@@ -1,0 +1,82 @@
+{
+  "EmployeeList": [
+
+    {
+      "Age": 25,
+      "Color": "Fair",
+      "Gender": "Male",
+      "Height": 5.9,
+      "JobDesignation": "Developer",
+      "Name": "Mohan",
+      "Weight": 68
+    },
+
+    {
+      "Age": 23,
+      "Color": "Fair",
+      "Gender": "Male",
+      "Height": 6.2,
+      "JobDesignation": "Developer",
+      "Name": "Sanjay",
+      "Weight": 73
+    },
+    {
+      "Age": 26,
+      "Color": "Fair",
+      "Gender": "Male",
+      "Height": 5.8,
+      "JobDesignation": "DB Developer",
+      "Name": "Teja",
+      "Weight": 80
+    },
+    {
+      "Age": 23,
+      "Color": "Fair",
+      "Gender": "Renuka",
+      "Height": 5.4,
+      "JobDesignation": "DB Developer",
+      "Name": "Renuka",
+      "Weight": 55
+    },
+    {
+      "Age": 24,
+      "Color": "Fair",
+      "Gender": "Female",
+      "Height": 5.4,
+      "JobDesignation": "Tester",
+      "Name": "Gayatri",
+      "Weight": 52
+    },
+
+    {
+      "Age": 32,
+      "Color": "Fair",
+      "Gender": "Male",
+      "Height": 5.4,
+      "JobDesignation": "Tester",
+      "Name": "Rama krishna",
+      "Weight": 65
+    },
+
+    {
+      "Age": 24,
+      "Color": "Low",
+      "Gender": "Male",
+      "Height": 5.4,
+      "JobDesignation": "Bussiness Analist",
+      "Name": "Sri kanth",
+      "Weight": 65
+    },
+
+    {
+      "Age": 28,
+      "Color": "Fair",
+      "Gender": "Female",
+      "Height": 5.4,
+      "JobDesignation": "Bussiness Analist",
+      "Name": "Varsha",
+      "Weight": 50
+    }
+
+  ]
+}
