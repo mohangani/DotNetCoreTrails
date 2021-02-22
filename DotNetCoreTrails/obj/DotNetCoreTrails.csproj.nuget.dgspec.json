@@ -41,6 +41,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.0-dev-00199, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0-dev-00909, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

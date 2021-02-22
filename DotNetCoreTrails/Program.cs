@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Formatting.Compact;
 
 namespace DotNetCoreTrails
 {
@@ -13,11 +15,26 @@ namespace DotNetCoreTrails
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            Log.Logger = new LoggerConfiguration()
+                .Enrich.FromLogContext()
+               // .WriteTo.File(new CompactJsonFormatter(), "log.txt")
+                .WriteTo.File("log.txt")
+                .CreateLogger();
+            try
+            {
+
+                CreateHostBuilder(args).Build().Run();
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+            .UseSerilog()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

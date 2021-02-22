@@ -57,7 +57,6 @@ namespace DotNetCoreTrails
                 endpoints.MapControllers();
             });
 
-
             //Test Push
         }
     }

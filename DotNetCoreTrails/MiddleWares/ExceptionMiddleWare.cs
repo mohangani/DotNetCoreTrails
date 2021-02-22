@@ -1,5 +1,6 @@
 ﻿using DotNetCoreTrails.Exceptions;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,14 @@ namespace DotNetCoreTrails.MiddleWares
     /// </summary>
     public class ExceptionMiddleWare : IMiddleware
     {
+
+        public ExceptionMiddleWare(ILogger loger)
+        {
+            Loger = loger;
+        }
+
+        public ILogger Loger { get; }
+
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {
             var response = context.Response;
@@ -23,11 +32,12 @@ namespace DotNetCoreTrails.MiddleWares
                 await next(context);
             }
             catch (TestException ex) {
-
+                Loger.LogError(ex.ToString());
                 await response.WriteAsync(ex.ToString());
             }
             catch (Exception exception)
             {
+                Loger.LogError(exception.ToString());
                 await response.WriteAsync(exception.Serialize());
             }
         }
