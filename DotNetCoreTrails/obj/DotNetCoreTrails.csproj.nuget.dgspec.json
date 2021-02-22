@@ -46,6 +46,14 @@
               "target": "Package",
               "version": "[4.0.0-dev-00199, )"
             },
+            "Serilog.Filters.Expressions": {
+              "target": "Package",
+              "version": "[2.1.1-dev-00054, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.2.0-dev-00264, )"
+            },
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[5.0.0-dev-00909, )"

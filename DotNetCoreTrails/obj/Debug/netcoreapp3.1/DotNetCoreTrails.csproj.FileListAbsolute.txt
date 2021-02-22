@@ -38,7 +38,6 @@ C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\net
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\netcoreapp3.1\DotNetCoreTrails.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\netcoreapp3.1\DotNetCoreTrails.pdb
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\netcoreapp3.1\DotNetCoreTrails.genruntimeconfig.cache
-C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
@@ -51,7 +50,6 @@ C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\net
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Serilog.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll
@@ -62,5 +60,7 @@ C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\net
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\netcoreapp3.1\DotNetCoreTrails.csproj.CopyComplete
+C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Serilog.Filters.Expressions.dll
+C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Superpower.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\netcoreapp3.1\DotNetCoreTrails.csproj.CoreCompileInputs.cache
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\netcoreapp3.1\DotNetCoreTrails.MvcApplicationPartsAssemblyInfo.cache

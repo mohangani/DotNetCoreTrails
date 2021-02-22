@@ -9,35 +9,30 @@ using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Formatting.Compact;
 
+
+
+
+//Serilog Ref URL:  https://www.techrepository.in/blog/posts/writing-logs-to-different-files-serilog-asp-net-core
 namespace DotNetCoreTrails
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Log.Logger = new LoggerConfiguration()
-                .Enrich.FromLogContext()
-               // .WriteTo.File(new CompactJsonFormatter(), "log.txt")
-                .WriteTo.File("log.txt")
-                .CreateLogger();
-            try
-            {
 
-                CreateHostBuilder(args).Build().Run();
-            }
-            finally
-            {
-                Log.CloseAndFlush();
-            }
+            CreateHostBuilder(args).Build().Run();
+
 
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-            .UseSerilog()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+            .UseSerilog((hostingContext, loggerConfig) =>
+            loggerConfig.ReadFrom.Configuration(hostingContext.Configuration) // it reads the all configurations from appsettings.json file
+        );
     }
 }

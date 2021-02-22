@@ -12,6 +12,7 @@ namespace DotNetCoreTrails.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -22,6 +23,15 @@ namespace DotNetCoreTrails.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
+            _logger.LogInformation("Writing to log file with INFORMATION severity level.");
+        
+            _logger.LogDebug("Writing to log file with DEBUG severity level."); 
+        
+            _logger.LogWarning("Writing to log file with WARNING severity level.");
+        
+            _logger.LogError("Writing to log file with ERROR severity level.");
+        
+            _logger.LogCritical("Writing to log file with CRITICAL severity level.");
         }
 
         [HttpGet]

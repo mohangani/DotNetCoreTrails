@@ -16,7 +16,7 @@ namespace DotNetCoreTrails.MiddleWares
     public class ExceptionMiddleWare : IMiddleware
     {
 
-        public ExceptionMiddleWare(ILogger loger)
+        public ExceptionMiddleWare(ILogger<ExceptionMiddleWare> loger)
         {
             Loger = loger;
         }
