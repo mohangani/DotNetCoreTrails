@@ -12,6 +12,24 @@
     },
 
     {
+      "Age": 25,
+      "Color": "Fair",
+      "Gender": "Male",
+      "Height": 5.9,
+      "JobDesignation": "Developer",
+      "Name": "Mohan",
+      "Weight": 68
+    },
+    {
+      "Age": 23,
+      "Color": "Fair",
+      "Gender": "Male",
+      "Height": 6.2,
+      "JobDesignation": "Developer",
+      "Name": "Sanjay",
+      "Weight": 73
+    },
+    {
       "Age": 23,
       "Color": "Fair",
       "Gender": "Male",

@@ -27,4 +27,11 @@ namespace DotNetCoreTrails.Models
 
         private string GetDebuggerDisplay() => $"{Name} - {Age} - {Gender}";
     }
+
+
+    public class EmployeesList
+    {
+       public List<Employee> EmployeeList { get; set; }
+
+    }
 }
