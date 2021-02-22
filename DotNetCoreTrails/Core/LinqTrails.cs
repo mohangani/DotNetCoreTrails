@@ -10,23 +10,40 @@ namespace DotNetCoreTrails.Core
 {
     public class LinqTrails
     {
-        public IEnumerable<Employee> DistinctResult(IEnumerable<Employee> employeesist) {
-            return employeesist.Distinct(new Employeecomparer());
+        public class Employeecomparer : IEqualityComparer<Employee>
+        {
+            public bool Equals([AllowNull] Employee x, [AllowNull] Employee y) => (x.Name == y.Name);
+            //:TODO
+            public int GetHashCode([DisallowNull] Employee obj) => 1;
         }
 
 
-        public class Employeecomparer : IEqualityComparer<Employee>
+        #region Distinct
+        //Works Super fast than Group by
+        public IEnumerable<Employee> DistinctResult(IEnumerable<Employee> employeesist)
         {
-            public bool Equals([AllowNull] Employee x, [AllowNull] Employee y)
-            {
-                return (x.Name == y.Name) ;
-            }
+            return employeesist.Distinct(new Employeecomparer());
+        }
 
-            //:TODO
-            public int GetHashCode([DisallowNull] Employee obj)
-            {
-                return 1;
-            }
+        public IEnumerable<Employee> DistinctResultWithGroupBy(IEnumerable<Employee> employeesist)
+        {
+            return employeesist.GroupBy(x => x.Name).Select(x => x.First());
+        }
+        #endregion
+
+        public IEnumerable<IGrouping<string, Employee>> GroupByDesignation(IEnumerable<Employee> employeesist)
+        {
+            return employeesist.GroupBy(x => x.JobDesignation);
+        }
+
+        public IEnumerable<IGrouping<string, Employee>> GroupByDesignationAndOrderByAsc(IEnumerable<Employee> employeesist)
+        {
+            return employeesist.GroupBy(x => x.JobDesignation).OrderBy(x => x.Key);
+        }
+
+        public IEnumerable<IGrouping<string, Employee>> GroupByDesignationAndOrderByLengthOrderByAsc(IEnumerable<Employee> employeesist)
+        {
+            return employeesist.GroupBy(x => x.JobDesignation).OrderBy(x => x.Key.Length).ThenBy(x=>x.Key);
         }
 
     }

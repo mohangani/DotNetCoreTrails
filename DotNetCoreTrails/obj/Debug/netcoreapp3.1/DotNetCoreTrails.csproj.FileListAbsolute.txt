@@ -21,7 +21,6 @@ C:\Study Folder\C# Trails\DotNetCoreTrails\DotNetCoreTrails\DotNetCoreTrails\obj
 C:\Study Folder\C# Trails\DotNetCoreTrails\DotNetCoreTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Jsons\Sample.Json
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Jsons\Sample.Json
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\DotNetCoreTrails.exe
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\DotNetCoreTrails.deps.json
@@ -64,3 +63,4 @@ C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\net
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Superpower.dll
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\netcoreapp3.1\DotNetCoreTrails.csproj.CoreCompileInputs.cache
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\netcoreapp3.1\DotNetCoreTrails.MvcApplicationPartsAssemblyInfo.cache
+C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Jsons\EmployeeList.Json
