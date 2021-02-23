@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DotNetCoreTrails.Core
 {
+    //ref: https://www.tutorialsteacher.com/linq/linq-equality-operator
     public class LinqTrails
     {
         public class Employeecomparer : IEqualityComparer<Employee>
@@ -31,6 +32,9 @@ namespace DotNetCoreTrails.Core
         }
         #endregion
 
+        #region ToLookup & GroupBy 
+
+        //TODO: Use ToLookUp Insted of Group by
         public IEnumerable<IGrouping<string, Employee>> GroupByDesignation(IEnumerable<Employee> employeesist)
         {
             return employeesist.GroupBy(x => x.JobDesignation);
@@ -43,8 +47,47 @@ namespace DotNetCoreTrails.Core
 
         public IEnumerable<IGrouping<string, Employee>> GroupByDesignationAndOrderByLengthOrderByAsc(IEnumerable<Employee> employeesist)
         {
-            return employeesist.GroupBy(x => x.JobDesignation).OrderBy(x => x.Key.Length).ThenBy(x=>x.Key);
+            return employeesist.GroupBy(x => x.JobDesignation).OrderBy(x => x.Key.Length).ThenBy(x => x.Key);
         }
+        #endregion
+
+        public object JoinTwoLists(IEnumerable<Employee> employeeList, IEnumerable<EmployeeMartialStatus> employeeMartialStatusList)
+        {
+            return employeeList.Join(employeeMartialStatusList,
+                  el => el.Name,
+                  eml => eml.Name,
+                  (el, eml) => new { el.Name, el.Gender, el.Age, eml.MaritalStatus });
+        }
+
+        //Group join is grouping the list on key only
+        public IEnumerable<object> GroupJoinTwoLists(IEnumerable<Employee> employeeList)
+        {
+            
+
+            var result = Enum.GetValues(typeof(MaritialStatus)).Cast<MaritialStatus>().GroupJoin(employeeList,
+                                          eml => eml,
+                                          el => el.MaritalStatus,
+                                          (eml, el) => new
+                                          {
+                                              Emplyees = el,
+                                              MartialStatus = eml
+
+                                          });
+
+            OfTypeLinq();
+            return result;
+        }
+
+
+        public void OfTypeLinq() {
+
+            var list = new List<object>{ 1, "mohan", 23.1 };
+
+
+            var result = list.OfType<string>().ToList();
+        
+        }
+
 
     }
 }

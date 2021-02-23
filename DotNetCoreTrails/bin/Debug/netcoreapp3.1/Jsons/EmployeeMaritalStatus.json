@@ -1,0 +1,42 @@
+{
+  "MartialStatusList": [
+
+    {
+      "MaritalStatus": 1,//MaritialStatus,
+      "Name": "Mohan"
+    },
+
+    {
+      "MaritalStatus": 1,//MaritialStatus,
+      "Name": "Sanjay"
+    },
+    {
+      "MaritalStatus": 1,//MaritialStatus,
+      "Name": "Teja"
+    },
+    {
+      "MaritalStatus": 1,//MaritialStatus,
+      "Name": "Renuka"
+    },
+    {
+      "MaritalStatus": 2,//MaritialStatus
+      "Name": "Gayatri"
+    },
+
+    {
+      "MaritalStatus": 2,//MaritialStatus
+      "Name": "Rama krishna"
+    },
+
+    {
+      "MaritalStatus": 2,//MaritialStatus
+      "Name": "Sri kanth"
+    },
+
+    {
+      "MaritalStatus": 1,//MaritialStatus,
+      "Name": "Varsha"
+    }
+
+  ]
+}

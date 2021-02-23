@@ -64,3 +64,4 @@ C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\net
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\netcoreapp3.1\DotNetCoreTrails.csproj.CoreCompileInputs.cache
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\obj\Debug\netcoreapp3.1\DotNetCoreTrails.MvcApplicationPartsAssemblyInfo.cache
 C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Jsons\EmployeeList.Json
+C:\Study Folder\DotNetCoreTrails\DotNeCoretTrails\DotNetCoreTrails\bin\Debug\netcoreapp3.1\Jsons\EmployeeMaritalStatus.json
