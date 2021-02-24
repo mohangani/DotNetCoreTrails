@@ -62,9 +62,9 @@ namespace DotNetCoreTrails.Core
         //Group join is grouping the list on key only
         public IEnumerable<object> GroupJoinTwoLists(IEnumerable<Employee> employeeList)
         {
-            
 
-            var result = Enum.GetValues(typeof(MaritialStatus)).Cast<MaritialStatus>().GroupJoin(employeeList,
+
+           return Enum.GetValues(typeof(MaritialStatus)).Cast<MaritialStatus>().GroupJoin(employeeList,
                                           eml => eml,
                                           el => el.MaritalStatus,
                                           (eml, el) => new
@@ -73,19 +73,13 @@ namespace DotNetCoreTrails.Core
                                               MartialStatus = eml
 
                                           });
-
-            OfTypeLinq();
-            return result;
         }
 
 
-        public void OfTypeLinq() {
-
-            var list = new List<object>{ 1, "mohan", 23.1 };
-
-
+        public void OfTypeLinq()
+        {
+            var list = new List<object> { 1, "mohan", 23.1 };
             var result = list.OfType<string>().ToList();
-        
         }
 
 
