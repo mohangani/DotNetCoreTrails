@@ -11,14 +11,21 @@ namespace DotNetCoreTrails.Controllers
     [Route("[controller]")]
     public class EmployeeController : Controller
     {
-        [HttpGet]
+      
         public Employee Get()
         {
+            BadRequest();
             return new Employee("Mohan");
         }
 
         [HttpGet("GetIActionResult")]
         public IActionResult GetIActionResult()
+        {
+            return Ok(new Employee("Mohan"));
+        }
+
+        [HttpGet("GetIActionResult")]
+        public IActionResult GetIActionResult(int a)
         {
             return Ok(new Employee("Mohan"));
         }

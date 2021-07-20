@@ -28,7 +28,8 @@ namespace DotNetCoreTrails.Core
 
         public IEnumerable<Employee> DistinctResultWithGroupBy(IEnumerable<Employee> employeesist)
         {
-            return employeesist.GroupBy(x => x.Name).Select(x => x.First());
+            return employeesist.GroupBy(x => x.Name).Select(x => x.FirstOrDefault());
+            return employeesist.GroupBy(x => x.Name).Select(x => x.FirstOrDefault());
         }
         #endregion
 
@@ -51,6 +52,8 @@ namespace DotNetCoreTrails.Core
         }
         #endregion
 
+        #region Joins
+
         public object JoinTwoLists(IEnumerable<Employee> employeeList, IEnumerable<EmployeeMartialStatus> employeeMartialStatusList)
         {
             return employeeList.Join(employeeMartialStatusList,
@@ -64,17 +67,18 @@ namespace DotNetCoreTrails.Core
         {
 
 
-           return Enum.GetValues(typeof(MaritialStatus)).Cast<MaritialStatus>().GroupJoin(employeeList,
-                                          eml => eml,
-                                          el => el.MaritalStatus,
-                                          (eml, el) => new
-                                          {
-                                              Emplyees = el,
-                                              MartialStatus = eml
+            return Enum.GetValues(typeof(MaritialStatus)).Cast<MaritialStatus>().GroupJoin(employeeList,
+                                           eml => eml,
+                                           el => el.MaritalStatus,
+                                           (eml, el) => new
+                                           {
+                                               Emplyees = el,
+                                               MartialStatus = eml
 
-                                          });
+                                           });
         }
 
+        #endregion
 
         public void OfTypeLinq()
         {
@@ -82,6 +86,49 @@ namespace DotNetCoreTrails.Core
             var result = list.OfType<string>().ToList();
         }
 
+        //Sequence Equal :- compare 2 lists equal or not
+        //Concat
+
+        #region DefaultIfEmpty & Empty & Range & Repeat 
+        //DefaultIfEmpty & Empty & Range & Repeat &
+        public IEnumerable<Employee> DefaultValueIfEmpty(IEnumerable<Employee> employeeList)
+        {
+            return employeeList.DefaultIfEmpty(null);
+        }
+
+        public IEnumerable<T> EmptyEmployeeList<T>() where T : class
+        {
+            return Enumerable.Empty<T>();
+        }
+
+        public IEnumerable<int> Range(int start, int count)
+        {
+            return Enumerable.Range(start, count);
+        }
+        #endregion
+
+
+        //Union & intersect & Except
+
+
+
+
+        //Skip & Skip While
+        public IEnumerable<Employee> Skip(IEnumerable<Employee> empList) {
+
+            return empList.Skip(2);
+        
+        }
+
+        //Skip & Skip While
+        public IEnumerable<Employee> SkipWhile(IEnumerable<Employee> empList)
+        {
+
+            return empList.SkipWhile(x=> x.Name == "Sanjay");
+
+        }
+
+        //Take & TakeWhile
 
     }
 }
